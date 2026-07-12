@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizar Blood Strike a 90Hz - Nagi Optimizer</title>
+    <style>
+        body { background-color: #0f0f12; color: #e1e1e6; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: #16161a; padding: 15px; text-align: center; border-bottom: 2px solid #ff3e3e; }
+        nav { background-color: #1a1a24; padding: 10px; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-size: 14px; }
+        nav a:hover { color: #ff3e3e; }
+        .container { padding: 20px; max-width: 600px; margin: 0 auto; }
+        h1 { color: #fff; font-size: 24px; }
+        h2 { color: #ff3e3e; margin-top: 30px; font-size: 18px; }
+        code { background-color: #1c1c24; display: block; padding: 12px; border-radius: 6px; color: #00ff66; font-family: monospace; overflow-x: auto; border: 1px solid #333; margin: 15px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 style="margin:0; color:#ff3e3e;">🎯 NAGI OPTIMIZER</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">← Volver al Inicio</a>
+    </nav>
+
+    <div class="container">
+        <h1>Guía: Forzar 90Hz y quitar Límite Térmico en Android 14</h1>
+        <p><em>Por Nagi | Publicado hoy</em></p>
+        
+        <p>Uno de los mayores problemas al jugar competitivo es el estrangulamiento térmico. El sistema baja la potencia cuando el dispositivo sube de temperatura.</p>
+
+        <h2>Paso 1: Desbloqueo de FPS</h2>
+        <p>Ejecuta estos comandos en tu terminal enlazada a Shizuku para congelar la pantalla en su máximo rendimiento:</p>
+        <code>settings put system peak_refresh_rate 90.0<br>settings put system min_refresh_rate 90.0</code>
+
+        <h2>Paso 2: Apagar el Control Térmico</h2>
+        <p>Para evitar que el procesador reduzca su velocidad a mitad de partida, usa:</p>
+        <code>settings put global common_thermal_control 0</code>
+    </div>
+
+</body>
+</html>
+
